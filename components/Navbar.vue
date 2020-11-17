@@ -4,6 +4,7 @@
         <nuxt-link exact no-prefetch class="link" to="/" title="home" >home</nuxt-link>
         <nuxt-link no-prefetch class="link" to="/about" title="about" >about</nuxt-link>
         <nuxt-link no-prefetch class="link" to="/users" title="users" >users</nuxt-link>
+        <nuxt-link no-prefetch class="link" to="/viewpict" title="photos" >photos</nuxt-link>
         <nuxt-link v-if="!hasToken" no-prefetch class="link" to="/login" title="users" >log in</nuxt-link>
         <nuxt-link v-else @click.prevent="logOut()" no-prefetch class="link" to="#" title="users" >log out</nuxt-link>
     </nav>    
